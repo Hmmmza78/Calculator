@@ -44,6 +44,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  text-align: center;
 }
 #head {
   margin: auto;
@@ -51,4 +52,7 @@ button {
 }
 #Dev {
   color: rgba(16, 139, 88, 0.876);
+}
+#additonal {
+  text-align: center;
 }
