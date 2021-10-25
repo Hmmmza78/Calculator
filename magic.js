@@ -1,7 +1,6 @@
 let screen = document.getElementById("screen");
 let buttons = document.querySelectorAll("button");
 let screenValue = "";
-const concl = screenValue;
 let mpt = "Your input is emtpy";
 import(Math);
 for (const butt of buttons) {
@@ -17,7 +16,14 @@ for (const butt of buttons) {
       screen.value = "";
     } else if (buttonText == "=") {
       screenValue = screen.value = eval(screenValue);
+      let concl = screenValue;
+      console.log(concl);
       screenValue = "";
+      let vv = 43;
+      const para = document.getElementById("pp");
+      const sttrA = `The solution to your input is <em>${concl}</em>`;
+      para.innerHTML = sttrA;
+      alert("Thanks for using the calculator. :)");
       // let sttrA = `The answer for ${concl} is ${screenValue}`;
 
       // console.log("working well");
@@ -46,9 +52,9 @@ for (const butt of buttons) {
   });
 }
 // =====Additional=====
-// let para = document.getElementById("pp")
-// let sttrA = `The answer for ${concl} is ${screenValue}`
-// para.appendChild(sttrA);
+
+// const tmpstr = `THis is a test template ${vv}`;
+// console.log(tmpstr);
 // import(Math);
 // console.log(Math.sin(20));
 // document.getElementById("pp").innerHTML = "HEllo world";
