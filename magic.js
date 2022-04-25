@@ -23,7 +23,7 @@ for (const butt of buttons) {
       const para = document.getElementById("pp");
       const sttrA = `The solution to your input is <em>${concl}</em>`;
       para.innerHTML = sttrA;
-      alert("Thanks for using the calculator. :)");
+     // alert("Thanks for using the calculator. :)");
       // let sttrA = `The answer for ${concl} is ${screenValue}`;
 
       // console.log("working well");
